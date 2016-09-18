@@ -10,8 +10,8 @@ class RegisterCwjobs(unittest.TestCase):
         # self.driver = webdriver.Chrome("K:\Downloads\chromedriver.exe")
         self.driver = webdriver.Firefox()
 
-    # def tearDown(self):
-    #     self.driver.close()
+    def tearDown(self):
+        self.driver.close()
 
     def test_register_cwjobs_succes(self):
         self.driver.get("https://www.cwjobs.co.uk/account/register")
